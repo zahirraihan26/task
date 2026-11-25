@@ -5,7 +5,7 @@ const Task = require("../models/Task");
 const router = express.Router();
 const validStatuses = ["pending", "in-progress", "done"];
 
-// POST /api/tasks - create a task
+
 router.post("/", async (req, res, next) => {
   try {
     const { title, status, dueDate, userId } = req.body;
